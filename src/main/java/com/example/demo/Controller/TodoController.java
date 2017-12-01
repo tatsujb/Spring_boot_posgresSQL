@@ -16,6 +16,7 @@ public class TodoController {
     @Autowired
     private TodoService todoService;
 
+    //TODO change to getMapping
     @RequestMapping(method = RequestMethod.GET)
     public Collection<Todo> getAllTodos(){
         return todoService.getAllTodos();
